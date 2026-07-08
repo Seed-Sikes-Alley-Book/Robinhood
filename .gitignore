@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+build/
+dist/
+=3.7.0
+=4.9.0
+=12.0.0
+
+
+# --- Virtual Environments ---
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# --- OS-specific ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+data/2026/
+
+# --- Docker ---
+# Don’t commit local Docker volumes or build cache
+docker-data/
+docker-cache/
