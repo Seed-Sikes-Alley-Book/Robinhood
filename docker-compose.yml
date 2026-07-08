@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python_app
+    restart: unless-stopped
+
+    # Load secrets or API keys securely
+    env_file:
+      - /config/secrets.env
+
+    # Mount your project folder for live development
+    volumes:
+      - .:/app
+
+    # Default command (can be overridden)
+    command: python main.py
+
+    # Optional: expose a port if your app serves HTTP
+    # ports:
+    #   - "8000:8000"
