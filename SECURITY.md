@@ -32,6 +32,8 @@
         |   1.0.8       |   :white_check_mark:  |
         |   < 1.0       |   :x: --------------- |
 
+##  Run the "Python Debugger main.py" script
+    Load and Run a Batch 
+    See below example
 
-
-<img src="config/Running-Sucess-UI.png" width="400">
+<img src="config/Running-Sucess-UI.png" >

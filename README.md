@@ -2,7 +2,7 @@
 # The Robinhood Project
 
 
-##  Build a Python stock screener that finds stocks forming the first three strokes of a capital "W" (a forming double bottom): an initial decline, a bounce up, and a second decline that brings price back near the first low.
+##  A Python stock screener that finds stocks forming the first three strokes of a capital "W" (a forming double bottom): an initial decline, a bounce up, and a second decline that brings price back near the first low.
 
 
 ##  Data & universe
@@ -31,19 +31,19 @@
 
 ##  Extras
 
-Python script that could place an order to buy if morning and after-noon tasks to record price have completed.
-Save API Token in .secets to connect
+    Python script that could place an order to buy if morning and after-noon tasks to record price have completed.
+
+    Save API Token in .secets to connect
 
 ##
- * Look at todays 8 am price
- * Look at todays noon price
- * Lood at afterhours price 
+    * Look at todays 8 am price
+    * Look at todays noon price
+    * Lood at afterhours price 
+
 
 ###
-I wanted to run an elevator pitch by you with a single page business plan for automating my Robinhood trading. The idea is to use a simple Python script that can automatically place a buy order based on certain conditions.	
+    test with secrets.dev and secrets.prod
 
-###
-test with secrets.dev and secrets.prod
 	- secrets.dev is for development and testing
 	- secrets.prod is for production
 	API_KEY = "rh-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="
@@ -52,9 +52,9 @@ test with secrets.dev and secrets.prod
 
 
 ###
-Sign up today.
+    Sign up today.
 
-Notes: Must have a Robinhood account.
+    Notes: Must have a Robinhood account.
 		Must have Python installed on your machine.
 			Must have pip installed to install dependencies.
 				1. Clone the repo
@@ -63,8 +63,7 @@ Notes: Must have a Robinhood account.
 				4. Create a `.secrets` file with your Robinhood API token in it.
 				5. Run the script using `python robinhood.py`
                 
-
-##	Install Instructions 101
+### Install Instructions 101
 
 	GUI for Python3 implementation 
 
@@ -75,43 +74,42 @@ Notes: Must have a Robinhood account.
 		your Docker env
 
 
-##	Install Instructions .env 
+###	Install Instructions .env 
 
 
-#   pip install yfinance==1.4.1 pandas==3.0.3 numpy==1.24.0 scipy==1.10.0 matplotlib>=3.7.0 pyarrow>=12.0.0 lxml>=4.9.0
+###   pip install yfinance==1.4.1 pandas==3.0.3 numpy==1.24.0 scipy==1.10.0 matplotlib>=3.7.0 pyarrow>=12.0.0 lxml>=4.9.0
 
-# ─────────────────────────────────────────────
-# Development Environment Variables (Safe)
-# Roku‑Book Project : Instructions pip install -- run once, then comment out of this file.
-# ─────────────────────────────────────────────
+### Development Environment Variables (Safe)
+### Roku‑Book Project : Instructions pip install -- run once, then comment out of this file.
 
-# API keys (use test keys only)
-ROBINHOOD_API_KEY_TEST=dev_test_key_here
-BASE64_PRIVATE_KEY_TEST=dev_test_private_key_here
+### API keys (use test keys only)
+    ROBINHOOD_API_KEY_TEST=dev_test_key_here
+    BASE64_PRIVATE_KEY_TEST=dev_test_private_key_here
 
-# App configuration
-APP_ENV=development
-DEBUG=true
-LOG_LEVEL=info
+### App configuration
+    APP_ENV=development
+    DEBUG=true
+    LOG_LEVEL=info
 
-# Local database (dev only)
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=dev_user
-DB_PASSWORD=dev_password
-DB_NAME=dev_db
+### Local database (dev only)
+    DB_HOST=localhost
+    DB_PORT=5432
+    DB_USER=dev_user
+    DB_PASSWORD=dev_password
+    DB_NAME=dev_db
 
-# Optional: service endpoints
-API_BASE_URL=https://sandbox.api.example.com
+### Optional: service endpoints
+    API_BASE_URL=https://sandbox.api.example.com
 
 
 
-##	In the .vscode folder add these files 
-		config.json
-		launch.json
-		settings.json
-		tasks.json
-
+###	In the .vscode folder add these files 
+	config.json
+	launch.json
+	settings.json
+	tasks.json
+    
+    ### config.json
 	{
     "name": "Robinhood Debug",
     "type": "debugpy",
@@ -119,10 +117,10 @@ API_BASE_URL=https://sandbox.api.example.com
     "program": "${workspaceFolder}/screener.py",
     "console": "integratedTerminal",
     "python": "${workspaceFolder}/.venv/Scripts/python.exe"
-}
+    }
 
 
-##	launch.json
+###	launch.json
 
 {
     "version": "0.2.0",
@@ -154,7 +152,7 @@ API_BASE_URL=https://sandbox.api.example.com
 }
 
 
-##	settings.json
+###	settings.json
 
 {
     "python-envs.pythonProjects": [
@@ -174,7 +172,7 @@ API_BASE_URL=https://sandbox.api.example.com
 }
 
 
-##	tasks.json
+###	tasks.json
 
 {
     "version": "2.0.0",
