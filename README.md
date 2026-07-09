@@ -36,9 +36,9 @@
     Save API Token in .secets to connect
 
 ##
- * Look at todays 8 am price
- * Look at todays noon price
- * Lood at afterhours price 
+    * Look at todays 8 am price
+    * Look at todays noon price
+    * Lood at afterhours price 
 
 
 ###
