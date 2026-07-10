@@ -39,6 +39,7 @@ Desktop.ini
 .idea/
 *.swp
 data/2026/
+data/charts
 
 # --- Docker ---
 # Don’t commit local Docker volumes or build cache
