@@ -2,5 +2,5 @@ import requests
 
 tempLink = ""
 
-response = requests.get()
+response = requests.get(tempLink)
 
