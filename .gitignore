@@ -39,8 +39,6 @@ Desktop.ini
 .idea/
 *.swp
 data/2026/
-data/charts/
-config/secrets.env
 
 # --- Docker ---
 # Don’t commit local Docker volumes or build cache
