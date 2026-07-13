@@ -5,19 +5,21 @@ from typing import Any, Dict, Optional
 import uuid
 import requests
 from nacl.signing import SigningKey
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv  
 
 load_dotenv(dotenv_path='config/secrets.env')
 API_KEY = os.getenv('ROBINHOOD_API_KEY_TEST')
 BASE64_PRIVATE_KEY = os.getenv('BASE64_PRIVATE_KEY_TEST')
+
+
 
 class CryptoAPITrading:
     def __init__(self):
         self.api_key = API_KEY
         private_key_seed = base64.b64decode(BASE64_PRIVATE_KEY)
         self.private_key = SigningKey(private_key_seed)
-        self.base_url = "https://trading.robinhood.com/"
+        self.base_url = "https://trading.robinhood.com"
 
     @staticmethod
     def _get_current_timestamp() -> int:
@@ -123,22 +125,21 @@ class CryptoAPITrading:
     def get_orders(self) -> Any:
         path = "/api/v1/crypto/trading/orders/"
         return self.make_api_request("GET", path)
-                
+
+
 def main():
     api_trading_client = CryptoAPITrading()
+    print(api_trading_client.get_account())
 
+   
 
     order = api_trading_client.place_order(
           str(uuid.uuid4()),
-          "sell",
+          "buy",
           "market",
           "BTC-USD",
           {"asset_quantity": "0.0001"}
     )
-    
-
-    
-
 
 
 
