@@ -31,7 +31,9 @@ RUN pip install --no-cache-dir \
     scipy==1.10.0 \
     matplotlib==3.7.0 \
     pyarrow==12.0.0 \
-    lxml==4.9.0
+    lxml==4.9.0 \
+    PyNaCl==1.5.0 \
+    python-dotenv==1.0.1 
 
 
 
