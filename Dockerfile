@@ -40,9 +40,15 @@ RUN pip install --no-cache-dir \
 # Copy project files
 COPY . .
 
+
 # Create non-root user for security
 RUN useradd -m appuser
 USER appuser
+
+
+
+RUN python scripts/validate_version.py $(cat version.txt)
+
 
 # Default command
 CMD ["python", "main.py"]
