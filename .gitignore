@@ -38,11 +38,14 @@ Desktop.ini
 .vscode/
 .idea/
 *.swp
-data/2026/
-data/charts/
-config/secrets.env
+/data/2026/
+/data/charts/
+/config/secrets.env
+
+
 
 # --- Docker ---
 # Don’t commit local Docker volumes or build cache
 docker-data/
 docker-cache/
+src/app/config/secrets.env
