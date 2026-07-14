@@ -2,16 +2,23 @@
 Centralized configuration for the W-pattern stock screener.
 All tunable parameters live here.
 """
+from datetime import datetime
 
 from pathlib import Path
 
 # =============================================================================
 # PATHS
 # =============================================================================
+
+current_date = datetime.now()
+
+MONTH = current_date.strftime("%b").lower()
+DAY = current_date.strftime("%d")
+YEAR = str(current_date.year)
 DATA_DIR = Path("./data")
-CACHE_FILE = DATA_DIR / "ohlcv_cache.parquet"
-RESULTS_FILE = DATA_DIR / "screener_results.csv"
-CHARTS_DIR = DATA_DIR / "charts"
+CACHE_FILE = DATA_DIR / f"charts/{YEAR}/{MONTH}/{DAY}/ohlcv_cache.parquet"
+RESULTS_FILE = DATA_DIR  / f"charts/{YEAR}/{MONTH}/{DAY}/screener_results.csv"
+CHARTS_DIR = DATA_DIR / f"charts/{YEAR}/{MONTH}/{DAY}"
 
 # =============================================================================
 # UNIVERSE FILTERS
