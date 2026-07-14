@@ -12,9 +12,9 @@
         JSON
 
         |   --------    |   ------------------- |
-        |   1.1.x       |   :white_check_mark:  |
-        |   1.0.2       |   :x: --------------- |
-        |   1.0.8       |   :white_check_mark:  |
+        |   1.0.0       |   :white_check_mark:  |
+        |   0.1.8       |   :x: --------------- |
+        |   0.1.5       |   :white_check_mark:  |
         |   < 1.0       |   :x: --------------- |
 
 
@@ -27,9 +27,9 @@
         JSON
 
         |   --------    |   ------------------- |
-        |   1.1.x       |   :white_check_mark:  |
-        |   1.0.2       |   :x: --------------- |
-        |   1.0.8       |   :white_check_mark:  |
+        |   1.0.0       |   :white_check_mark:  |
+        |   0.1.8       |   :x: --------------- |
+        |   0.1.4       |   :white_check_mark:  |
         |   < 1.0       |   :x: --------------- |
 
 ##  Run the "Python Debugger main.py" script
