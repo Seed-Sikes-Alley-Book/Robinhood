@@ -185,4 +185,6 @@
 
 
 
-### More Documentation will we available ... promise.
+### More Documentation will we available soon ... we promise.
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
