@@ -48,3 +48,4 @@ Desktop.ini
 # Don’t commit local Docker volumes or build cache
 docker-data/
 docker-cache/
+src/app/config/secrets.env
