@@ -1,10 +1,20 @@
 yfinance==1.4.1
-pandas==2.2.2
-numpy==1.26.0
-scipy==1.10.0
+
+# Data stack (synced)
+numpy==2.3.4
+pandas==2.3.3
+scipy==1.16.3
 matplotlib==3.7.0
-pyarrow==12.0.0
+
+# Arrow / parquet (synced + secure)
+pyarrow==15.0.2
+
+# XML parsing
 lxml==4.9.0
-PyNaCl>=1.5.0
-python-dotenv>=1.0.0
-requests>=2.31.0
+
+# Security libs (synced)
+PyNaCl==1.6.1
+python-dotenv==1.2.1
+
+# HTTP stack (synced)
+requests==2.32.3
