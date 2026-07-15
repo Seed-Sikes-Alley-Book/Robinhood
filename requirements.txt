@@ -1,20 +1,12 @@
 yfinance==1.4.1
 
-# Data stack (synced)
-numpy==2.3.4
+numpy==1.26.4
 pandas==2.3.3
 scipy==1.16.3
 matplotlib==3.7.0
-
-# Arrow / parquet (synced + secure)
 pyarrow==15.0.2
 
-# XML parsing
 lxml==4.9.0
-
-# Security libs (synced)
 PyNaCl==1.6.1
 python-dotenv==1.2.1
-
-# HTTP stack (synced)
 requests==2.32.3
