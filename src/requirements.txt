@@ -57,7 +57,7 @@ prompt_toolkit==3.0.47
 
 pybricksdev==1.0.0a50
 pycparser==2.22
-PyJWT==2.8.0
+PyJWT>=2.13.0
 PyNaCl==1.6.1
 pyotp==2.3.0
 pyserial==3.5
